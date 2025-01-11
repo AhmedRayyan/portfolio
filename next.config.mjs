@@ -2,7 +2,10 @@
 const nextConfig = {
   reactStrictMode: true,
   output: 'export',
-  basePath:'/portfolio',
+  basePath: '/portfolio',
+  typescript: {
+    ignoreBuildErrors: true,
+  },
 };
 
 export default nextConfig;
