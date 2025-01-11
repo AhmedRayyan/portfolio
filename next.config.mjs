@@ -3,6 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   output: 'export',
   basePath: '/portfolio',
+  assetPrefix: '/portfolio/',
   typescript: {
     ignoreBuildErrors: true,
   },
