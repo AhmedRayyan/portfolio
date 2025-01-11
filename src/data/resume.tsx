@@ -1,6 +1,8 @@
 import { Icons } from "@/components/icons";
 import { HomeIcon, PhoneCall, } from "lucide-react";
 
+const isGithubActions = process.env.GITHUB_ACTIONS || false;
+
 export const DATA = {
   name: "Ahmed Rayyan",
   initials: "AR",
@@ -11,7 +13,7 @@ export const DATA = {
     "Full-Stack Developer",
   summary:
     "I’m a passionate and versatile Software Developer with a strong focus on backend development and databases, complemented by a keen interest in data analysis, business insights, and full-stack web development.",
-  avatarUrl: "/Me.png",
+  avatarUrl: `${isGithubActions ? "/portfolio" : ""}/Me.png`,
   skills: [
     "React",
     "Next.js",
@@ -68,7 +70,7 @@ export const DATA = {
       badges: [],
       location: "Remote",
       title: "Web Developer Associate (Remote)",
-      logoUrl: "/Dig-Logo.png",
+      logoUrl: `${isGithubActions ? "/portfolio" : ""}/Dig-Logo.png`,
       start: "Jan. 2023",
       end: "Feb. 2024",
       description: "Enhanced an E-Commerce Scraping Software by Constantly Crafting and Updating Advanced CSS Selectors for Optimized Data Extraction"
@@ -81,7 +83,7 @@ export const DATA = {
       title: "Software Developer Freelancer",
       start: "Feb. 2024",
       end: "Present",
-      logoUrl: "/Freelancing.png",
+      logoUrl: `${isGithubActions ? "/portfolio" : ""}/Freelancing.png`,
     },
   ],
   education: [
@@ -89,13 +91,13 @@ export const DATA = {
       school: "Moharram Private Language School - High School",
       href: "https://www.facebook.com/p/Moharram-Language-Schools-MILS-100069279848501/",
       degree: "Mathematics Section",
-      logoUrl: "/MILS.png",
+      logoUrl: `${isGithubActions ? "/portfolio" : ""}/MILS.png`,
     },
     {
       school: "High Institute Of Computer Science & Information Systems",
       href: "https://csi.edu.eg/dpage.aspx?id=11&facultyId=4",
       degree: "Computer Science",
-      logoUrl: "/CSC.png",
+      logoUrl: `${isGithubActions ? "/portfolio" : ""}/CSC.png`,
     },
   ],
   projects: [
@@ -117,7 +119,7 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "/Activa.png",
+      image: `${isGithubActions ? "/portfolio" : ""}/Activa.png`,
       video: "",
     },
     {
@@ -138,7 +140,7 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "/Bitweave.png",
+      image: `${isGithubActions ? "/portfolio" : ""}/Bitweave.png`,
       video: "",
     },
     {
@@ -165,7 +167,7 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "/Esiraq.png",
+      image: `${isGithubActions ? "/portfolio" : ""}/Esiraq.png`,
       video: "",
     },
     {
@@ -191,7 +193,7 @@ A Web App That Simplifies The Process of Ai Models Fine-Tuning Training Where Th
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "/getMyLoRA.png",
+      image: `${isGithubActions ? "/portfolio" : ""}/getMyLoRA.png`,
       video: "",
     },
   ],
