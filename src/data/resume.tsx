@@ -13,7 +13,7 @@ export const DATA = {
     "Full-Stack Developer",
   summary:
     "I’m a passionate and versatile Software Developer with a strong focus on backend development and databases, complemented by a keen interest in data analysis, business insights, and full-stack web development.",
-  avatarUrl: `${isGithubActions ? "/portfolio" : ""}/Me.png`,
+  avatarUrl: `${isGithubActions ? "/portfolio" : ""}/me.png`,
   skills: [
     "React",
     "Next.js",
