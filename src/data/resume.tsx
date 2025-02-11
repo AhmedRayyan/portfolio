@@ -51,7 +51,7 @@ export const DATA = {
         name: "Call Me",
         url: "tel:+201091455414",
         icon: PhoneCall,
-        navbar:true,
+        navbar: true,
       },
       Email: {
         name: "Send Email",
@@ -100,102 +100,152 @@ export const DATA = {
       logoUrl: `${isGithubActions ? "/portfolio" : ""}/CSC.png`,
     },
   ],
-  projects: [
-    {
-      title: "Activa Travel Agency Website",
-      href: "https://activa.travel",
-      dates: "",
-      active: true,
-      description:
-        "Fully Functional website Incorporating a Modern Design, User-Friendly Navigation. Features Detailed Travel Packages, Seamless Booking Functionality, and Responsive Design to Ensure Compatibility Across all Devices.",
-      technologies: [
-        "PHP",
-        "WordPress"
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://activa.travel",
-          icon: <Icons.globe className="size-3" />,
-        },
-      ],
-      image: `${isGithubActions ? "/portfolio" : ""}/Activa.png`,
-      video: "",
-    },
-    {
-      title: "Bitweave Digital Agency Website",
-      href: "https://bitweave.io",
-      dates: "",
-      active: true,
-      description:
-        "",
-      technologies: [
-        "PHP",
-        "WordPress"
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://bitweave.io",
-          icon: <Icons.globe className="size-3" />,
-        },
-      ],
-      image: `${isGithubActions ? "/portfolio" : ""}/Bitweave.png`,
-      video: "",
-    },
-    {
-      title: "Certificate QR Code Creation & Checking System (for Energy Shield Services Company)",
-      href: "http://certificates.esiraq.net",
-      dates: "",
-      active: true,
-      description:
-        `1)	Developed A System To Manage Certificates Using QR Codes, Allowing Validation And Expiration Checks.
+  projects: [{
+    title: "To-Do Node.js API Backend",
+    dates: "",
+    active: true,
+    description:
+      "Designed and developed a robust To-Do API using Express.js and Node.js. Implemented user authentication with Prisma ORM and PostgreSQL. Documented the API using Swagger for seamless integration and developer usability.",
+    technologies: [
+      "Node.js",
+      "Express.js",
+      "Prisma ORM",
+      "PostgreSQL",
+      "Swagger",
+    ],
+    links: [
+      {
+        type: "GitHub",
+        href: "https://github.com/AhmedRayyan/to-do-backend",
+        icon: <Icons.github className="size-3" />,
+      },
+    ],
+    image: `${isGithubActions ? "/portfolio" : ""}/Rest API.png`,
+    video: "",
+  },
+  {
+    title: "Activa Travel Agency Website",
+    href: "https://activa.travel",
+    dates: "",
+    active: true,
+    description:
+      "Fully Functional website Incorporating a Modern Design, User-Friendly Navigation. Features Detailed Travel Packages, Seamless Booking Functionality, and Responsive Design to Ensure Compatibility Across all Devices.",
+    technologies: [
+      "PHP",
+      "WordPress"
+    ],
+    links: [
+      {
+        type: "Website",
+        href: "https://activa.travel",
+        icon: <Icons.globe className="size-3" />,
+      },
+    ],
+    image: `${isGithubActions ? "/portfolio" : ""}/Activa.png`,
+    video: "",
+  },
+  {
+    title: "Bitweave Digital Agency Website",
+    href: "https://bitweave.io",
+    dates: "",
+    active: true,
+    description:
+      "",
+    technologies: [
+      "PHP",
+      "WordPress"
+    ],
+    links: [
+      {
+        type: "Website",
+        href: "https://bitweave.io",
+        icon: <Icons.globe className="size-3" />,
+      },
+    ],
+    image: `${isGithubActions ? "/portfolio" : ""}/Bitweave.png`,
+    video: "",
+  },
+  {
+    title: "Certificate QR Code Creation & Checking System (for Energy Shield Services Company)",
+    href: "http://certificates.esiraq.net",
+    dates: "",
+    active: true,
+    description:
+      `1)	Developed A System To Manage Certificates Using QR Codes, Allowing Validation And Expiration Checks.
 2)	Built Admin Dashboard For Certificate Creation
 3)	 Implemented QR Code Generation And Integration, Storing Data In SQLite Via Prisma ORM.
 4)	Enabled Users To Scan The QR Code & Verify The Certificate's Status (Valid/Expired) With A Preview & Download Option.
 `,
-      technologies: [
-        "React.js",
-        "Next.js",
-        "Prisma ORM",
-        "SQLite",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "http://certificates.esiraq.net",
-          icon: <Icons.globe className="size-3" />,
-        },
-      ],
-      image: `${isGithubActions ? "/portfolio" : ""}/Esiraq.png`,
-      video: "",
-    },
-    {
-      title: "getMyLoRA (To Be Launched Soon)",
-      href: "https://getmylora.com",
-      dates: "",
-      active: false,
-      description:
-        `LoRA (Low-Rank Adaptation) is a Lightweight Fine-Tuning Method For Ai Models That Adapts Them To New Tasks, Styles, Or Subjects By Updating Only A Small Subset Of Their Parameters, Making It Efficient And Resource-Friendly.
+    technologies: [
+      "React.js",
+      "Next.js",
+      "Prisma ORM",
+      "SQLite",
+    ],
+    links: [
+      {
+        type: "Website",
+        href: "http://certificates.esiraq.net",
+        icon: <Icons.globe className="size-3" />,
+      },
+    ],
+    image: `${isGithubActions ? "/portfolio" : ""}/Esiraq.png`,
+    video: "",
+  },
+  {
+    title: "getMyLoRA (To Be Launched Soon)",
+    href: "https://getmylora.com",
+    dates: "",
+    active: false,
+    description:
+      `LoRA (Low-Rank Adaptation) is a Lightweight Fine-Tuning Method For Ai Models That Adapts Them To New Tasks, Styles, Or Subjects By Updating Only A Small Subset Of Their Parameters, Making It Efficient And Resource-Friendly.
 
 A Web App That Simplifies The Process of Ai Models Fine-Tuning Training Where The User Can Upload a Photoset to be Trained, Or Enter (Character Name, Art Style, Object, Environment or Scene, Expression/Emotion, Pose) and The App Will Handle Both The Data Collection and Model Training Processes and Will Deliver a Ready-to-Use .safetensors File Through a Download Link via E-Mail.
 `,
-      technologies: [
-        "React.js",
-        "Next.js",
-        "Prisma ORM",
-        "PostgreSQL",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://getmylora.com",
-          icon: <Icons.globe className="size-3" />,
-        },
-      ],
-      image: `${isGithubActions ? "/portfolio" : ""}/getMyLoRA.png`,
-      video: "",
-    },
+    technologies: [
+      "React.js",
+      "Next.js",
+      "Prisma ORM",
+      "PostgreSQL",
+    ],
+    links: [
+      {
+        type: "Website",
+        href: "https://getmylora.com",
+        icon: <Icons.globe className="size-3" />,
+      },
+    ],
+    image: `${isGithubActions ? "/portfolio" : ""}/getMyLoRA.png`,
+    video: "",
+  }, {
+    title: "Textify Assessment",
+    href: "https://textify-theta.vercel.app/analytics",
+    dates: "",
+    active: false,
+    description:
+      `Assessment Project For Textify Company
+Created A Simple, Responsive Dashboard With a Sidebar Navigation With An Analytics Page That Contains Graphs.
+`,
+    technologies: [
+      "React.js",
+      "Next.js",
+      "Tailwind CSS",
+    ],
+    links: [
+      {
+        type: "Website",
+        href: "https://textify-theta.vercel.app/analytics",
+        icon: <Icons.globe className="size-3" />,
+      },
+      {
+        type: "GitHub",
+        href: "https://github.com/AhmedRayyan/textify",
+        icon: <Icons.github className="size-3" />,
+      }
+    ],
+    image: `${isGithubActions ? "/portfolio" : ""}/Textify.png`,
+    video: "",
+  },
   ],
   hackathons: [
     {
